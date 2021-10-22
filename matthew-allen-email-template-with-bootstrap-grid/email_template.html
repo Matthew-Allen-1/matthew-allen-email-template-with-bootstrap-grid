@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Email Template</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="email_template.css">
+
+</head>
+<body>
+
+<div class="container-fluid my-container">
+
+    <div class="row my-row sm-no-wrap">
+
+        <div class="col-xs-12 col-md-2 nav-bar">
+            <p style = "font-size: 1.2em;">Welcome, Matt the Great!</p>
+
+            <p>
+                <button class = "d-sm-none" id="nav-button" data-bs-toggle="collapse" data-bs-target="#collapse-menu" aria-expanded="false" aria-controls="collapse-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false">
+                        <title>Menu</title>
+                        <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22">     
+                        </path>
+                    </svg>
+                </button>
+                <button id="compose-button">COMPOSE NEW</button> 
+            </p>
+
+              <div class="collapse" id="collapse-menu">
+                <ul>
+                <li><a href="#"">Inbox</a></li>
+                <li><a href=#>Tagged</a></li>
+                <li><a href=#>Important</a></li>
+                <li><a href=#>Sent Mail</a></li>
+                <li><a href=#>Drafts</a></li>
+                <li><a href=#>Trash</a></li>
+                </ul>
+              </div>
+
+            <!-- <nav class= "show-and-hide-nav collapse" id="bd-docs-nav">
+            <ul>
+                <li><a href="#"">Inbox</a></li>
+                <li><a href=#>Tagged</a></li>
+                <li><a href=#>Important</a></li>
+                <li><a href=#>Sent Mail</a></li>
+                <li><a href=#>Drafts</a></li>
+                <li><a href=#>Trash</a></li>
+            </ul>
+            </nav> -->
+        </div>
+
+        <div class="col-xs-12 col-md-3 email-list">
+            <span style="justify-items: center;"><input type="search" placeholder = "Search for emails ..."></input></span>
+
+            <div class = "thumbnail" id = "email1">
+                <p class = "thumbnail-header"><span style = "text-align: left; width: 59%; overflow-x: hidden; text-overflow: ellipsis; display: inline-block;">LinkedIn Connection Request</span><span style = "text-align: right; width: 40%; display: inline-block;">2:45p.m.</span></p>
+                <span class = "thumbnail-text">You have a connection requests from the following LinkedIn members: Warren Buffett, Bill Gates, Tesla, Jeff Bezos, Mark Zuckerberg, and Instagram.</span>
+            </div>
+
+            <div class = "thumbnail" id="email2">
+                <p class = "thumbnail-header"><span style = "text-align: left; width: 59%; overflow-x: hidden; text-overflow: ellipsis; display: inline-block;">Bay Valley Tech Code Academy</span><span style = "text-align: right; width: 40%; display: inline-block;">Yesterday</span></p>
+                <span class = "thumbnail-text">Welcome to the Bay Valley Tech Code Academy.  Our first class session will be held next Tuesday live via the Discord app.</span>
+            </div>
+
+            <div class = "thumbnail" id="email3">
+                <p class = "thumbnail-header"><span style = "text-align: left; width: 59%; overflow-x: hidden; text-overflow: ellipsis; display: inline-block;">Palindromes</span> <span style = "text-align: right; width: 40%; display: inline-block;"">12/02/2021</span></p>                
+                <span class = "thumbnail-text">A man, a plan, a canal, Panama!.</span>
+            </div>
+        </div>
+
+        <div class="col col-md-7 page-content">
+
+            <div class="content-header">
+                <p style="font-size: 0.9em;"">To: math.d.allen@gmail.com</p>
+                <p style="font-size: 0.9em;">From: godog@gmail.com</p>
+            </div>
+
+            <div class="content">
+
+                <span style = "text-align: left; width: 74%; display: inline-block; font-size: 2em; font-weight: bold; overflow-x: hidden; text-overflow: ellipsis;">Palindromes</span>
+                <span style = "text-align: right; width: 25%; display: inline-block;">
+                 <a href="#""><img src="https://useiconic.com/open-iconic/svg/trash.svg" alt="trash"></a>
+                 <a href="#""><img src="https://useiconic.com/open-iconic/svg/arrow-thick-left.svg" alt="arrow-thick-left"></a>
+                    <a href="#""><img src="https://useiconic.com/open-iconic/svg/ellipses.svg" alt="ellipses"></a>
+                </span></br></br>
+
+                <div class="email-text"></div>
+                <p>A man, a plan, a canal, Panama!</p>
+                <p>A dog! A panic in a pagoda.</p>
+                <p>A Toyota. Race fast, safe car. A Toyota.</p> 
+                <p>Able was I ere I saw Elba.</p> 
+                <p>A nut for a jar of tuna.</p> 
+                <p>Rats live on no evil star.</p> 
+                <p>Nurse, I spy gypsies, run! </p> 
+                <p>Was it a bar or a bat I saw?</p> 
+                </div>
+
+                <!-- Email reply -->
+                 <!-- <form action="" method="">
+                    <div class="reply-box">
+                        <textarea type="text" class="form-control border-0" id="email-reply" rows="5"> 
+                        </textarea>
+                        <svg id="attachment-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="float-left bi bi-paperclip" viewBox="0 0 16 16">
+                            <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+                        </svg>
+                        <button class="float-right btn btn-primary py-1 " id="reply-btn">Reply</button>
+                          
+                    </div>
+                </form> -->
+
+                <form>
+                    <div class="reply-box">
+                        <textarea class="form-control" type="text" rows="5">Enter reply here ...</textarea>
+                        
+                        <span style = "text-align: left; width: 74%; display: inline-block; font-size: 2em; font-weight: bold; overflow-x: hidden; text-overflow: ellipsis;">
+                            <a href="#"><svg id="attachment-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="black" class="float-left bi bi-paperclip" viewBox="0 0 16 16">
+                                <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+                            </svg></a>
+                        </span>
+
+                        <span style = "text-align: right; width: 25%; display: inline-block;">
+                            <button class="float-right" id="reply-button">Reply</button>
+                        </span>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+</body>
+</html>
