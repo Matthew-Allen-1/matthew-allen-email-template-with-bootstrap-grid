@@ -118,7 +118,8 @@ img {
     align-self: center;
     margin: auto;
     position: relative;
-    top: calc(100vh - 780px);
+    top: calc(100vh - 776px);
+   
     border: 4px solid black;
     border-radius: 10px;
 }
@@ -142,6 +143,10 @@ img {
 
 #nav-button {
     margin-right: 15px;
+}
+
+.email-text.p {
+    color: green
 }
 
 @media (min-width: 576px) {
@@ -204,6 +209,11 @@ img {
         overflow-y: scroll;
         overflow-x: scroll;
     }
+
+    .reply-box {
+        position: relative;
+        top: 10px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -235,4 +245,23 @@ img {
         overflow-x: scroll;
     }
 
+    .reply-box {
+        position: relative;
+        top: 10px;
+        width: 90%
+        height: 200px;
+    }
 }
+
+
+@media (max-height: 800px)  {
+
+    .reply-box {
+        width: 90%;
+        align-self: center;
+        margin: auto;
+        position: inherit;
+        border: 4px solid black;
+        border-radius: 10px;
+    }
+}git a
