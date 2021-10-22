@@ -129,7 +129,7 @@ img {
     left: 25px;
 }
 
-#reply-button{
+#reply-button {
     position:  relative;
     right: 25px;
     bottom: 10px;
@@ -152,6 +152,13 @@ img {
 
 }
 
+@media (min-width: 1200px) and (max-width: 1400px) {
+    
+    .nav-bar {
+        background-color:purple;
+    }
+
+}
 @media (min-width: 992px) and (max-width: 1200px) {
     
     .nav-bar {
@@ -202,18 +209,18 @@ img {
 @media (max-width: 576px) {
 
     .nav-bar {
-        height: 150px;
+        
         background-color: green;
     }
 
-    /* ul {
+    ul {
         list-style: none;
         padding-left: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         overflow-x: clip;
-    } */
+    }
 
     .email-list {
         height: 200px;
