@@ -45,7 +45,6 @@ body {
 .page-content {
     border: 3px solid black;
     padding: 0;
-    max-width: 58vw;
     background-color: rgb(148, 152, 152, 0.12);
 }
 
@@ -131,7 +130,7 @@ img {
 }
 
 #reply-button{
-    position: relative;
+    position:  relative;
     right: 25px;
     bottom: 10px;
     background-color: rgb(148, 152, 155);
@@ -141,20 +140,40 @@ img {
     text-align: center;
 }
 
-
-@media (min-width: 768px) {
-    
-    .show-and-hide-nav {
-        display: block;
-    }
+#nav-button {
+    margin-right: 15px;
 }
 
-@media (min-width: 576px & max-width: 768px) {
+@media (min-width: 576px) {
 
+    #collapse-menu {
+        display: block;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    
     .nav-bar {
-        height: 150px;
+        background-color:yellow;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    
+    .nav-bar {
+        background-color: red;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    
+    .nav-bar {
+        height: 200px;
         overflow-y: clip;
-        min-width: none;
+        background-color: blue;
     }
 
     ul {
@@ -180,21 +199,21 @@ img {
     }
 }
 
-/* @media (max-width: 576px) {
+@media (max-width: 576px) {
 
     .nav-bar {
         height: 150px;
-        overflow-y: clip;
-        min-width: none;
+        background-color: green;
     }
 
-    ul {
+    /* ul {
         list-style: none;
         padding-left: 0;
-        display: none;
+        display: flex;
+        flex-direction: column;
         justify-content: space-around;
         overflow-x: clip;
-    }
+    } */
 
     .email-list {
         height: 200px;
@@ -209,7 +228,4 @@ img {
         overflow-x: scroll;
     }
 
-    .content-page {
-        min-width: none;
-    }
-} */
+}
