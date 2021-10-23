@@ -10,13 +10,15 @@ body {
     height: 100%;
 }
 
+/* Nav Bar (Column 1) Styling */
+
 .nav-bar {
-    border: 3px solid black;
-    background-color: rgb(29, 2, 2, 0.92);
+    /* border: 3px solid black; */
+    background-color: rgb(29, 2, 2, 0.88);
     color: white;
     display: flex;
     flex-direction: column;
-    min-width: 175px;
+    min-width: 200px;
     padding-top: 20px;
 }
 
@@ -24,34 +26,82 @@ body {
     text-align: center; 
 }
 
-.email-list {
-    border: 3px solid black;
+.search-input {
+    height: 40px;
+    overflow: clip;
+    margin: 10px 0 20px 0;
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.to-input {
+    height: 28px;
+    width: 64%;
+    margin: 0px 0px 0px 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px 15px 0px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+a {color: rgb(44, 117, 44);}
+
+#compose-button {
+    margin: 10px 0 10px 0;
+    background-color: rgb(200, 100, 40);
+    box-shadow: 4px 4px 8px 0px rgba(41, 29, 6, 0.9);
+    height: 40px;
+    width: 160px;
+    border-radius: 5px;
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+    color: rgb(29, 2, 2, 0.92);
+}
+
+#nav-button {
+    margin-right: 15px;
+    background-color: rgb(200, 100, 40);
+    box-shadow: 4px 4px 8px 0px rgba(41, 29, 6, 0.9);
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 1px;
+}
+
+#nav-button::before { 
+    content: "Menu";
+    font-weight: bold;
+    color: rgb(29, 2, 2, 0.92);
+    margin: 2px;
+    /* line-height: 40px;
+    vertical-align: middle; */
+}
+
+@media (min-width: 576px) {
+    #collapse-menu {
+        display: block;
+    }
+}
+
+/* Email Thumbnails (Column 2) Styling */
+
+.email-thumbnails {
+    /* border: 3px solid black; */
     background-color: hsl(0, 0%, 50%);
     padding: 10px;
     min-width: 300px;
 }
 
-.content-header {
-    height: 100px;
-    padding: 20px 10px 20px 10px;
-    border: 3px solid green;
-}
-
-.content {
-    height: calc(100%-100px);
-    padding: 20px 10px 20px 10px;
-}
-
-.page-content {
-    border: 3px solid black;
-    padding: 0;
-    background-color: rgb(148, 152, 152, 0.12);
-}
-
 .thumbnail {
     background-color: rgb(148, 152, 155);
     border: 1px dotted hsl(0, 0%, 30%);
-    width: calc(100%-20px);
+    width: 100%;
     margin: 10px 0 10px 0;
     padding: 10px 10px 20px 10px;
     color: black;
@@ -60,13 +110,6 @@ body {
     text-overflow: ellipsis;
     resize: both;
     border-radius: 5px;
-}
-
-.thumbnail:hover {
-    background-color: rgb(67, 69, 71);;
-    cursor: pointer;
-    width: 100%;
-    box-shadow: 2px 2px 8px 0px rgba(27, 10, 10, 0.959);
 }
 
 #email3 {
@@ -80,32 +123,44 @@ body {
     width: 100%;
 }
 
-input {
-    height: 40px;
-    overflow: clip;
-    margin: 10px 0 20px 0;
-    width: 90%;
-    min-width: 270px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
+.thumbnail-text {
+    text-align: left;
+    width: 100%; 
+    overflow-x: hidden; 
+    text-overflow: ellipsis; 
+    display: inline-block;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
+.thumbnail:hover {
+    background-color: rgb(67, 69, 71);;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px 0px rgba(27, 10, 10, 0.959);
 }
 
-#compose-button {
-    margin: 10px 0 10px 0;
-    background-color: rgb(211, 94, 27);
-    height: 40px;
-    width: 160px;
-    border-radius: 5px;
-    text-align: center;
-    align-self: center;
+
+/* Page Content (Column 3) Styling */
+
+.page-content {
+    border: 1px solid black;
+    padding: 0;
+    background-color: rgb(148, 152, 152, 0.12);
+}
+
+.content-header {
+    height: 100px;
+    padding: 20px 10px 20px 10px;
+    border-bottom: 1px solid black;
+    background-color: rgb(29, 2, 2, 0.12);
+}
+
+.content {
+    height: calc(100%-100px);
+    padding: 20px 10px 20px 10px;
+    width: 98%;
+}
+
+p.email-text {
+    color: green
 }
 
 img {
@@ -118,20 +173,36 @@ img {
     align-self: center;
     margin: auto;
     position: relative;
-    top: calc(100vh - 776px);
-   
-    border: 4px solid black;
+    top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    max-height: 200px;
+}
+
+.new-message-box {
+    width: 95%;
+    align-self: center;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black;
     border-radius: 10px;
 }
 
+.new-message-form {
+    height: calc(90vh - 270px);
+    width: 100%;
+}
+
 #attachment-icon {
-    padding: 4px;
-    position:relative;
+    position: relative;
     left: 25px;
 }
 
 #reply-button {
-    position:  relative;
+    position: relative;
     right: 25px;
     bottom: 10px;
     background-color: rgb(148, 152, 155);
@@ -141,67 +212,31 @@ img {
     text-align: center;
 }
 
-#nav-button {
-    margin-right: 15px;
-}
 
-.email-text.p {
-    color: green
-}
+/* Media Query for Small Screens */
 
-@media (min-width: 576px) {
-
-    #collapse-menu {
-        display: block;
-    }
-
-}
-
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (max-width: 767px) {
     
     .nav-bar {
-        background-color:purple;
-    }
-
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-    
-    .nav-bar {
-        background-color:yellow;
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-    
-    .nav-bar {
-        background-color: red;
-    }
-
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-    
-    .nav-bar {
-        height: 200px;
         overflow-y: clip;
-        background-color: blue;
+        /* background-color: blue; */
+        max-height: 200px;
+        /* Do I need this? */
+        min-width: none;  
     }
-
+    
     ul {
-        list-style: none;
-        padding-left: 0;
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
         overflow-x: clip;
     }
 
-    .email-list {
+    .email-thumbnails {
         max-height: 200px;
         width: 98%;
         overflow-y: scroll;
         overflow-x: clip;
+        /* Do I need this? */
         min-width: none;
     }
 
@@ -210,58 +245,24 @@ img {
         overflow-x: scroll;
     }
 
-    .reply-box {
-        position: relative;
-        top: 10px;
+    /* Nested Media Query for Extra-Small Screens */
+
+    @media (max-width: 575px) {
+
+        .nav-bar {
+            background-color: green;
+            border: 1px solid black;
+        }
+
+        .email-thumbnails {
+            border-bottom: 1px solid black;
+        }
+
+        .reply-box {
+            width: 95%;
+        }
+
+        a {color: rgb(29, 2, 2);}
+
     }
 }
-
-@media (max-width: 576px) {
-
-    .nav-bar {
-        
-        background-color: green;
-    }
-
-    ul {
-        list-style: none;
-        padding-left: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        overflow-x: clip;
-    }
-
-    .email-list {
-        height: 200px;
-        width: 98%;
-        overflow-y: scroll;
-        overflow-x: clip;
-        min-width: none;
-    }
-
-    .content {
-        overflow-y: scroll;
-        overflow-x: scroll;
-    }
-
-    .reply-box {
-        position: relative;
-        top: 10px;
-        width: 90%
-        height: 200px;
-    }
-}
-
-
-@media (max-height: 800px)  {
-
-    .reply-box {
-        width: 90%;
-        align-self: center;
-        margin: auto;
-        position: inherit;
-        border: 4px solid black;
-        border-radius: 10px;
-    }
-}git a
