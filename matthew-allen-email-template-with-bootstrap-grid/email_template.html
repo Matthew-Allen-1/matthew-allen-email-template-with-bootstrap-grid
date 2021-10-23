@@ -24,7 +24,8 @@
         <!-- Nav Bar Column -->
 
         <div class="col-xs-12 col-md-2 nav-bar">
-            <p style = "font-size: 1.2em;">Welcome, Matt the Great!</p>
+            
+            <h1>Welcome, Matt the Great!</h1>
 
             <!-- Hamburger Icon Button -->
 
@@ -41,65 +42,61 @@
 
             <!-- Collapsible Menu -->
 
-              <div class="collapse" id="collapse-menu">
-                <ul style = "font-size: 1.2em;">
+            <div class="collapse" id="collapse-menu">
+                <ul>
                     <li><a href="#">Inbox</a></li>
-                    <li><a href="#"">Tagged</a></li>
-                    <li><a href="#"">Important</a></li>
-                    <li><a href="#"">Sent Mail</a></li>
-                    <li><a href="#"">Drafts</a></li>
-                    <li><a href="#"">Trash</a></li>
+                    <li><a href="#">Tagged</a></li>
+                    <li><a href="#">Important</a></li>
+                    <li><a href="#">Sent Mail</a></li>
+                    <li><a href="#">Drafts</a></li>
+                    <li><a href="#">Trash</a></li>
                 </ul>
-              </div>
-
+            </div>
         </div>
 
         <!-- Email Thumbnails Column -->
 
         <div class="col-xs-12 col-md-3 email-thumbnails">
-            <span style="justify-items: center;"><input class = "search-input" type="search" placeholder = "Search for emails ..."></input></span>
+            
+            <span><input class = "search-input" type="search" placeholder = "Search for emails ..."></input></span>
+            
+            <button class = "thumbnail" id="email1" data-bs-toggle="collapse" data-bs-target="#collapse-content1" aria-expanded="false" aria-controls="content">
+                <p class = "thumbnail-header"><span class = "thumbnail-subject">LinkedIn Connection Request</span><span class = "thumbnail-time">2:45p.m.</span></p>
+                <span class = "thumbnail-text">You have a connection requests from the following LinkedIn members: Warren Buffett, Bill Gates, Tesla, Jeff Bezos, Mark Zuckerberg, and Instagram.</span>
+            </button>
 
-        <button class = "thumbnail" id="email1" data-bs-toggle="collapse" data-bs-target="#collapse-content1" aria-expanded="false" aria-controls="content">
-            <!-- <div class = "thumbnail" id = "email1"> -->
-                <p class = "thumbnail-header"><span style = "text-align: left; width: 59%; overflow-x: hidden; text-overflow: ellipsis; display: inline-block;">LinkedIn Connection Request</span><span style = "text-align: right; width: 40%; display: inline-block;">2:45p.m.</span></p>
-                <span class = "thumbnail-text"">You have a connection requests from the following LinkedIn members: Warren Buffett, Bill Gates, Tesla, Jeff Bezos, Mark Zuckerberg, and Instagram.</span>
-        </button>
-
-        <button class = "thumbnail" id="email2" data-bs-toggle="collapse" data-bs-target="#collapse-content2" aria-expanded="false" aria-controls="content">
-            <!-- <div class = "thumbnail" id="email2"> -->
-                <p class = "thumbnail-header"><span style = "text-align: left; width: 59%; overflow-x: hidden; text-overflow: ellipsis; display: inline-block;">Bay Valley Tech Code Academy</span><span style = "text-align: right; width: 40%; display: inline-block;">Yesterday</span></p>
+            <button class = "thumbnail" id="email2" data-bs-toggle="collapse" data-bs-target="#collapse-content2" aria-expanded="false" aria-controls="content">
+                <p class = "thumbnail-header"><span class = "thumbnail-subject">Bay Valley Tech Code Academy</span><span class = "thumbnail-time">Yesterday</span></p>
                 <span class = "thumbnail-text">Welcome to the Bay Valley Tech Code Academy.  Our first class session will be held next Tuesday live via the Discord app.</span>
-        </button>
+            </button>
 
-        <button class = "thumbnail" id="email3" data-bs-toggle="collapse" data-bs-target="#collapse-content3" aria-expanded="true" aria-controls="content" visible = "true">
-            <!-- <div class = "thumbnail" id="email3"> -->
-                <p class = "thumbnail-header"><span style = "text-align: left; width: 59%; overflow-x: hidden; text-overflow: ellipsis; display: inline-block;">Palindromes</span> <span style = "text-align: right; width: 40%; display: inline-block;"">12/02/2021</span></p>                
+            <button class = "thumbnail" id="email3" data-bs-toggle="collapse" data-bs-target="#collapse-content3" aria-expanded="true" aria-controls="content" visible = "true">
+                <p class = "thumbnail-header"><span class = "thumbnail-subject">Palindromes</span> <span class = "thumbnail-time">12/02/2021</span></p>                
                 <span class = "thumbnail-text">A man, a plan, a canal, Panama!.</span>
-        </button>
+            </button>
 
         </div>
 
         <!-- Email Content Column -->
 
-        <div class="col page-content">
+        <div class="col-xs-12 col-md page-content">
 
             <!-- Email1 Collapse Content -->
 
             <div class = "collapse" id = "collapse-content1">
-
                 <div class="content-header">
-                    <p style="font-size: 0.9em;"">To: math.d.allen@gmail.com</p>
-                    <p style="font-size: 0.9em;">From: linkedin@linked.com</p>
+                    <p>To: math.d.allen@gmail.com</p>
+                    <p>From: linkedin@linked.com</p>
                 </div>
     
                 <div class="content">
-    
-                    <span style = "text-align: left; width: 74%; display: inline-block; font-size: 2em; font-weight: bold; overflow-x: hidden; text-overflow: ellipsis;">LinkedIn Connection Request</span>
-                    <span style = "text-align: right; width: 25%; display: inline-block;">
-                     <a href="#""><img src="https://useiconic.com/open-iconic/svg/trash.svg" alt="trash"></a>
-                     <a href="#""><img src="https://useiconic.com/open-iconic/svg/arrow-thick-left.svg" alt="arrow-thick-left"></a>
-                        <a href="#""><img src="https://useiconic.com/open-iconic/svg/ellipses.svg" alt="ellipses"></a>
-                    </span></br></br>
+                    <p><span class = "email-subject">LinkedIn Connection Request</span>
+
+                    <span class = "email-icons">
+                     <a href="#"><img src="https://useiconic.com/open-iconic/svg/trash.svg" alt="trash"></a>
+                     <a href="#"><img src="https://useiconic.com/open-iconic/svg/arrow-thick-left.svg" alt="arrow-thick-left"></a>
+                        <a href="#"><img src="https://useiconic.com/open-iconic/svg/ellipses.svg" alt="ellipses"></a>
+                    </span></br></br></p>
     
                     <div class="email-text">
                         <p>You have a connection requests from the following LinkedIn members: Warren Buffett, Bill Gates, Tesla, Jeff Bezos, Mark Zuckerberg, and Instagram.</p></br></br>
@@ -109,21 +106,17 @@
     
                     <form>
                         <div class="reply-box">
-                            <textarea class="form-control" type="text" rows="5">Type your reply here ...</textarea>
-                            
-                            <span style = "text-align: left; width: 49%; display: inline-block; font-size: 2em; font-weight: bold; overflow-x: hidden; text-overflow: ellipsis;">
+                            <textarea class="form-control" type="text" rows="5" placeholder = "Type your reply here ..."></textarea>
+                            <span class = "paperclip">
                                 <a href="#"><svg id="attachment-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="black" class="float-left bi bi-paperclip" viewBox="0 0 16 16">
                                     <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
                                 </svg></a>
                             </span>
-    
-                            <span style = "text-align: right; width: 50%; display: inline-block;">
-                                <button class="float-right" id="reply-button">Reply</button>
+                            <span >
+                                <button class = "reply-button">Reply</button>
                             </span>
-    
                         </div>
                     </form>
-    
                 </div>
             </div>
             
@@ -132,18 +125,18 @@
             <div class = "collapse" id = "collapse-content2">
 
                 <div class="content-header">
-                    <p style="font-size: 0.9em;"">To: math.d.allen@gmail.com</p>
-                    <p style="font-size: 0.9em;">From: martyn@bayvalleytech.com</p>
+                    <p>To: math.d.allen@gmail.com</p>
+                    <p>From: martyn@bayvalleytech.com</p>
                 </div>
     
                 <div class="content">
-    
-                    <span style = "text-align: left; width: 74%; display: inline-block; font-size: 2em; font-weight: bold; overflow-x: hidden; text-overflow: ellipsis;">Bay Valley Tech Code Academy</span>
-                    <span style = "text-align: right; width: 25%; display: inline-block;">
-                     <a href="#""><img src="https://useiconic.com/open-iconic/svg/trash.svg" alt="trash"></a>
-                     <a href="#""><img src="https://useiconic.com/open-iconic/svg/arrow-thick-left.svg" alt="arrow-thick-left"></a>
-                        <a href="#""><img src="https://useiconic.com/open-iconic/svg/ellipses.svg" alt="ellipses"></a>
-                    </span></br></br>
+                    <p><span class = "email-subject">Bay Valley Tech Code Academy</span>
+                    
+                    <span class = "email-icons">
+                     <a href="#"><img src="https://useiconic.com/open-iconic/svg/trash.svg" alt="trash"></a>
+                     <a href="#"><img src="https://useiconic.com/open-iconic/svg/arrow-thick-left.svg" alt="arrow-thick-left"></a>
+                        <a href="#"><img src="https://useiconic.com/open-iconic/svg/ellipses.svg" alt="ellipses"></a>
+                    </span></br></br></p>
     
                     <div class="email-text">
                         <p>Welcome to the Bay Valley Tech Code Academy.  Our first class session will be held next Tuesday live via the Discord app.</p></br></br>
@@ -154,44 +147,41 @@
     
                     <form>
                         <div class="reply-box">
-                            <textarea class="form-control" type="text" rows="5">Type your reply here ...</textarea>
-                            
-                            <span style = "text-align: left; width: 49%; display: inline-block; font-size: 2em; font-weight: bold; overflow-x: hidden; text-overflow: ellipsis;">
+                            <textarea class="form-control" type="text" rows="5" placeholder = "Type your reply here ..."></textarea>
+                            <span class = "paperclip">
                                 <a href="#"><svg id="attachment-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="black" class="float-left bi bi-paperclip" viewBox="0 0 16 16">
                                     <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
                                 </svg></a>
                             </span>
-    
-                            <span style = "text-align: right; width: 50%; display: inline-block;">
-                                <button class="float-right" id="reply-button">Reply</button>
+                            <span >
+                                <button class = "reply-button">Reply</button>
                             </span>
-    
                         </div>
                     </form>
-    
                 </div>
             </div>
 
             <!-- Email3 Collapse Content -->
 
-            <div class = "collapse" id = "collapse-content3">
+            <div class = "collapse show" id = "collapse-content3">
 
             <div class="content-header">
-                <p style="font-size: 0.9em;"">To: math.d.allen@gmail.com</p>
-                <p style="font-size: 0.9em;">From: goodog@gmail.com</p>
+                <p>To: math.d.allen@gmail.com</p>
+                <p>From: goodog@gmail.com</p>
             </div>
 
             <div class="content">
+                
+                <p><span class = "email-subject">Palindromes</span>
 
-                <span style = "text-align: left; width: 74%; display: inline-block; font-size: 2em; font-weight: bold; overflow-x: hidden; text-overflow: ellipsis;">Palindromes</span>
-                <span style = "text-align: right; width: 25%; display: inline-block;">
-                 <a href="#""><img src="https://useiconic.com/open-iconic/svg/trash.svg" alt="trash"></a>
-                 <a href="#""><img src="https://useiconic.com/open-iconic/svg/arrow-thick-left.svg" alt="arrow-thick-left"></a>
-                    <a href="#""><img src="https://useiconic.com/open-iconic/svg/ellipses.svg" alt="ellipses"></a>
-                </span></br></br>
+                <span class = "email-icons">
+                <a href="#"><img src="https://useiconic.com/open-iconic/svg/trash.svg" alt="trash"></a>
+                <a href="#"><img src="https://useiconic.com/open-iconic/svg/arrow-thick-left.svg" alt="arrow-thick-left"></a>
+                    <a href="#"><img src="https://useiconic.com/open-iconic/svg/ellipses.svg" alt="ellipses"></a>
+                </span></br></br></p>
 
                 <div class="email-text">
-                    <p style = "color: green;">A man, a plan, a canal, Panama!</p>
+                    <p>A man, a plan, a canal, Panama!</p>
                     <p>A dog! A panic in a pagoda.</p>
                     <p>A Toyota. Race fast, safe car. A Toyota.</p> 
                     <p>Able was I ere I saw Elba.</p> 
@@ -205,23 +195,19 @@
 
                 <form>
                     <div class="reply-box">
-                        <textarea class="form-control" type="text" rows="5">Type your reply here ...</textarea>
-                        
-                        <span style = "text-align: left; width: 49%; display: inline-block; font-size: 2em; font-weight: bold; overflow-x: hidden; text-overflow: ellipsis;">
+                        <textarea class="form-control" type="text" rows="5" placeholder = "Type your reply here ..."></textarea>
+                        <span class = "paperclip">
                             <a href="#"><svg id="attachment-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="black" class="float-left bi bi-paperclip" viewBox="0 0 16 16">
                                 <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
                             </svg></a>
                         </span>
 
-                        <span style = "text-align: right; width: 50%; display: inline-block;">
-                            <button class="float-right" id="reply-button">Reply</button>
+                        <span>
+                            <button class="reply-button">Reply</button>
                         </span>
-
                     </div>
                 </form>
-
             </div>
-
             </div>
 
             <!-- New Message Collapse Content -->
@@ -229,32 +215,34 @@
             <div class = "collapse" id = "collapse-new-message">
 
                 <div class="content-header">
-                    <p style="font-size: 0.9em;"">To: <span><input class = "to-input" type="search" ></input></span></p>
-                    <p style="font-size: 0.9em;">From: math.d.allen@gmail.com</p>
+                    <p>To: <span><input class = "to-input" type="search" ></input></span></p>
+                    <p>From: math.d.allen@gmail.com</p>
                 </div>
 
                 <div class="content">
-                    <span style = "text-align: left; width: 74%; display: inline-block; font-size: 2em; font-weight: bold; overflow-x: hidden; text-overflow: ellipsis;">No Subject</span>
-                    <span style = "text-align: right; width: 25%; display: inline-block;">
-                     <a href="#""><img src="https://useiconic.com/open-iconic/svg/trash.svg" alt="trash"></a>
-                     <a href="#""><img src="https://useiconic.com/open-iconic/svg/arrow-thick-left.svg" alt="arrow-thick-left"></a>
-                        <a href="#""><img src="https://useiconic.com/open-iconic/svg/ellipses.svg" alt="ellipses"></a>
-                    </span></br></br>
+
+                    <p><span class = "email-subject">No Subject</span>
+
+                    <span class = "email-icons">
+                     <a href="#"><img src="https://useiconic.com/open-iconic/svg/trash.svg" alt="trash"></a>
+                     <a href="#"><img src="https://useiconic.com/open-iconic/svg/arrow-thick-left.svg" alt="arrow-thick-left"></a>
+                        <a href="#"><img src="https://useiconic.com/open-iconic/svg/ellipses.svg" alt="ellipses"></a>
+                    </span></br></br></p>
 
                     <form>
                         <div class = "new-message-box">
-                            <textarea class=" form-control new-message-form" type="text">Type your message here ...</textarea>
-                            <span class = "content-box" style = "text-align: left; width: 49%; display: inline-block; font-size: 2em; font-weight: bold; overflow-x: hidden; text-overflow: ellipsis;">
+
+                            <textarea class="form-control new-message-form" type="text" rows="5" placeholder = "Type your message here ..."></textarea>
+                            <span class = "paperclip">
                                 <a href="#"><svg id="attachment-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="black" class="float-left bi bi-paperclip" viewBox="0 0 16 16">
                                     <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
                                 </svg></a>
                             </span>
-                            <span style = "text-align: right; width: 50%; display: inline-block;">
-                                <button class="float-right" id="reply-button">Send</button>
+                            <span>
+                                <button class = "reply-button">Send</button>
                             </span>
                         </div>
                     </form>
-                    
                 </div>
             </div>
         </div>
